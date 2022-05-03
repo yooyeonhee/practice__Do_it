@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* header*/
+.header{
+    width: 100%;
+    height: 120px;
+}
+.navbar{
+    width: 1180px;
+    height: 100%;
+    margin: 0px auto;
+    position: relative; /*기준*/
+}
+.navbar h1{
+    position: absolute;
+    left: 0px;
+    bottom: 15px;
+}
+.navbar h1 a{
+    font: bold 24px/1px "arial";
+    color: #444;
+}
+.navbar .nav__mini{
+    position: absolute;
+    right: 30px;
+    top:30px;
+}
+.navbar .nav__mini li, .navbar .nav__main li{
+    float: left;
+}
+.navbar .nav__mini li a{
+    display: block;
+    font: 12px/1px "arial";
+    padding: 0px 10px;
+    color: #999;
+}
+.navbar .nav__main{
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+}
+.navbar .nav__main li a{
+    display: block;
+    font:bold 15px/1 "arial";
+    color: #555;
+    padding: 20px 40px;
+}
+.navbar .nav__main li a:hover{
+    background: #555;
+    color: #fff;
+}
+.wrapper{
+    width: 1180px;
+    height: calc(100vh - 120px);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper h1{
+    margin-bottom: 30px;
+}
+.wrapper h1 a{
+    font: bold 50px "arial";
+    color: #555;
+}
+.login_box{
+    display: flex;
+    flex-direction: column;
+}
+.login_box input, .login_box button{
+    width: 400px;
+    height: 50px;
+    margin:10px 0px;
+    padding: 2px 20px;
+    border: 1px solid #555;
+}
+.login_box button{
+    background-color: #fff;
+}
+.sign_up{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sign_up p{
+    color: #999;
+}
+.sign_up a{
+    color: rgb(125, 125, 125);
+    font-weight: bold;
+}
