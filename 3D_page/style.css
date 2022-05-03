@@ -16,9 +16,11 @@ body{
 }
 
 .wrap{
-    width: 100vw;
-    height: 100vh;
+    position: fixed;
+    width: 100%;
+    height: 100%;
     /*3D 구현을 위한 원근감*/
+    perspective: 1300px;
 }
 /* > 는 자식 선택자로 자식 요소에만 속성이 부여된다.*/
 .wrap>video{
@@ -32,13 +34,15 @@ body{
     width: 450px;
     height: 600px;
     position: absolute;
-    top: 65%;
-    left: 55%;
-    margin-top: -400px;
-    margin-left: -300px;
-    perspective: 1300px;
-    /* transform-style: preserve-3d;
-    animation: ani linear 30s infinite; */
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -220px;
+    transform-style: preserve-3d;
+    animation: ani linear 30s infinite;
+}
+.wrap #circle:hover{
+    animation-play-state: paused;
 }
 /* 작업할 화면 하나씩 보이게 함*/
 /* .wrap #circle .face7{
@@ -53,8 +57,9 @@ body{
     top: 0px;
     left: 0px;
     /* 안에서 보는 관점에서 뒤로 보이는 화면 숨김 처리*/
-    /* backface-visibility: hidden; */
+    backface-visibility: hidden;
     /* 하나씩 작업하기 위해 안보이게 설정*/
+    /* display: none; */
 }
 .wrap #circle article h1{
     position: absolute;
@@ -492,5 +497,5 @@ body{
     transform: rotateY(270deg) translateZ(-573px); 
 }
 .face8{
-    transform: rotateY(315deg) translateZ(-573px); 
+     transform: rotateY(315deg) translateZ(-573px); 
 }
